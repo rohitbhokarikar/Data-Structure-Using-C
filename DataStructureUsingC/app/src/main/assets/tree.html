@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style7 {font-size: 24px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style7">Programme for Trees -</p>
+<p>#include &lt;stdio.h&gt;<br />
+  #include &lt;malloc.h&gt;<br />
+  #include &lt;stdio.h&gt;<br />
+  #include &lt;conio.h&gt;<br />
+  typedef struct TREE {<br />
+  int data;<br />
+  struct TREE *left;<br />
+  struct TREE *right;<br />
+  }<br />
+  TREE;<br />
+  int main() {<br />
+  int data,depth;<br />
+  TREE *tree =NULL;<br />
+  TREE *InsertTree(int data,TREE *p);<br />
+  TREE *PrintTreeTriangle(TREE *tree, int level);<br />
+  int TreeDepth(TREE *tree,int *depth,int level);</p>
+<p> while(1) {<br />
+  printf(&quot;\nNumber to insert&quot;);<br />
+  scanf(&quot;%d&quot;, &amp;data);<br />
+  if (data==0)<br />
+  break;<br />
+  tree =InsertTree(data,tree);<br />
+  printf(&quot;\n Tree Display\n&quot;);<br />
+  PrintTreeTriangle(tree,1);<br />
+  depth=0;<br />
+  TreeDepth(tree,&amp;depth,0);</p>
+<p> }<br />
+  return(0);<br />
+  }<br />
+  TREE *InsertTree(int data,TREE *p) {<br />
+  if(!p) {<br />
+  p=(TREE*)malloc(sizeof(TREE));<br />
+  p-&gt;data=data;<br />
+  p-&gt;left=NULL;<br />
+  p-&gt;right=NULL;<br />
+  return(p);<br />
+  }<br />
+  if(data &lt; p-&gt;data)<br />
+  p-&gt;left=InsertTree(data,p-&gt;left); else<br />
+  if(data &gt; p-&gt;data)<br />
+  p-&gt;right=InsertTree(data,p-&gt;right);<br />
+  return(p);<br />
+  }<br />
+  TREE *PrintTreeTriangle(TREE *tree, int level) {<br />
+  int i;<br />
+  if(tree) {<br />
+  PrintTreeTriangle(tree-&gt;right,level+1);<br />
+  printf(&quot;\n\n&quot;);<br />
+  for (i=0;i&lt;level;i++)<br />
+  printf(&quot;       &quot;);<br />
+  printf(&quot;%d&quot;,tree-&gt;data);<br />
+  PrintTreeTriangle(tree-&gt;left,level+1);<br />
+  }<br />
+  return(NULL);<br />
+  }<br />
+  int TreeDepth(TREE *tree,int *depth,int level) {<br />
+  if(tree) {<br />
+  if (level&gt;*depth)<br />
+  *depth=level;<br />
+  TreeDepth(tree-&gt;left,depth,level+1);<br />
+  TreeDepth(tree-&gt;right,depth,level+1);<br />
+  }<br />
+  return(0);<br />
+  }<br />
+</p>
+<p class="style7">&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<div>
+  <p class="style1">Programe for Insertion Sort - </p>
+  <p>#include&lt;stdio.h&gt;<br />
+  int main()</p>
+  <p>{</p>
+  <p> int i,j,s,temp,a[10];</p>
+  <p> printf(&quot;Enter total elements: &quot;);<br />
+    scanf(&quot;%d&quot;,&amp;s);</p>
+  <p> printf(&quot;Enter %d elements: &quot;,s);<br />
+    for(i=0;i&lt;s;i++)<br />
+    scanf(&quot;%d&quot;,&amp;a[i]);</p>
+  <p> for(i=1;i&lt;s;i++)<br />
+    {<br />
+    temp=a[i];<br />
+    j=i-1;<br />
+    while((temp&lt;a[j])&amp;&amp;(j&gt;=0))<br />
+    {<br />
+    a[j+1]=a[j];<br />
+    j=j-1;<br />
+    }<br />
+    a[j+1]=temp;<br />
+    }</p>
+  <p> printf(&quot;After sorting: &quot;);<br />
+    for(i=0;i&lt;s;i++)<br />
+    printf(&quot; %d&quot;,a[i]);</p>
+  <p> return 0;</p>
+  <p>}</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><br />
+  </p>
+</div>
+</body>
+</html>

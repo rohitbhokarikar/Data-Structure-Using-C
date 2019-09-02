@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style6 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<p class="style6">Programme for Queue -</p>
+<p>#include &lt;stdio.h&gt;<br />
+  <br />
+  #define MAX 50<br />
+  int queue_array[MAX];<br />
+  int rear = - 1;<br />
+  int front = - 1;<br />
+  main()<br />
+  {<br />
+int choice;<br />
+while (1)<br />
+{<br />
+printf(&quot;1.Insert element to queue \n&quot;);<br />
+printf(&quot;2.Delete element from queue \n&quot;);<br />
+printf(&quot;3.Display all elements of queue \n&quot;);<br />
+printf(&quot;4.Quit \n&quot;);<br />
+printf(&quot;Enter your choice : &quot;);<br />
+scanf(&quot;%d&quot;, &amp;choice);<br />
+switch (choice)<br />
+{<br />
+case 1:<br />
+insert();<br />
+break;<br />
+case 2:<br />
+delete();<br />
+break;<br />
+case 3:<br />
+display();<br />
+break;<br />
+case 4:<br />
+exit(1);<br />
+default:<br />
+printf(&quot;Wrong choice \n&quot;);<br />
+} <br />
+}<br />
+}<br />
+insert()<br />
+{<br />
+int add_item;<br />
+if (rear == MAX - 1)<br />
+printf(&quot;Queue Overflow \n&quot;);<br />
+else<br />
+{<br />
+if (front == - 1)<br />
+<br />
+front = 0;<br />
+printf(&quot;Inset the element in queue : &quot;);<br />
+scanf(&quot;%d&quot;, &amp;add_item);<br />
+rear = rear + 1;<br />
+queue_array[rear] = add_item;<br />
+}<br />
+}<br />
+<br />
+delete()<br />
+{<br />
+if (front == - 1 || front &gt; rear)<br />
+{<br />
+printf(&quot;Queue Underflow \n&quot;);<br />
+return ;<br />
+}<br />
+else<br />
+{<br />
+printf(&quot;Element deleted from queue is : %d\n&quot;, queue_array[front]);<br />
+front = front + 1;<br />
+}<br />
+} <br />
+display()<br />
+{<br />
+int i;<br />
+if (front == - 1)<br />
+printf(&quot;Queue is empty \n&quot;);<br />
+else<br />
+{<br />
+printf(&quot;Queue is : \n&quot;);<br />
+for (i = front; i &lt;= rear; i++)<br />
+printf(&quot;%d &quot;, queue_array[i]);<br />
+printf(&quot;\n&quot;);<br />
+}</p>
+<p><br />
+  } </p>
+</body>
+</html>

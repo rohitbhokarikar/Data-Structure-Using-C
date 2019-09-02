@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style6 {font-size: 24px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style6">Programme for Linear Search -</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>void main()<br />
+  {<br />
+  int array[10];<br />
+  int i, num, keynum, found = 0;</p>
+<p> printf(&quot;Enter the num of elements  \n&quot;);<br />
+  scanf(&quot;%d&quot;, &amp;num);<br />
+  printf(&quot;Enter the elements  \n&quot;);<br />
+  for (i = 0; i &lt; num; i++)<br />
+  {<br />
+  scanf(&quot;%d&quot;, &amp;array[i]);<br />
+  }</p>
+<p> printf(&quot;Enter the element to be searched \n&quot;);<br />
+  scanf(&quot;%d&quot;, &amp;keynum);</p>
+<p> for (i = 0; i &lt; num ; i++)<br />
+  {<br />
+  if (keynum == array[i] )<br />
+  {<br />
+  found = 1;<br />
+  break;<br />
+  }<br />
+  }<br />
+  if (found == 1)<br />
+  printf(&quot;Element is present in the array\n&quot;);<br />
+  else<br />
+  printf(&quot;Element is not present in the array\n&quot;);<br />
+  }<br />
+</p>
+<p class="style6">&nbsp;</p>
+</body>
+</html>

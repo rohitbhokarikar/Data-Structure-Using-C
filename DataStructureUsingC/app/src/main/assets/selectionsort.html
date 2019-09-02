@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<p class="style1">Programme for Selection Sort -</p>
+<p>#include&lt;stdio.h&gt;<br />
+  int main()</p>
+<p>{</p>
+<p> int s,i,j,temp,a[20];</p>
+<p> printf(&quot;Enter number of elements &quot;);<br />
+  scanf(&quot;%d&quot;,&amp;s);</p>
+<p> printf(&quot;Enter %d elements: &quot;,s);<br />
+  for(i=0;i&lt;s;i++)<br />
+  scanf(&quot;%d&quot;,&amp;a[i]);</p>
+<p> for(i=0;i&lt;s;i++){<br />
+  for(j=i+1;j&lt;s;j++){<br />
+  if(a[i]&gt;a[j]){<br />
+  temp=a[i];<br />
+  a[i]=a[j];<br />
+  a[j]=temp;<br />
+  }<br />
+  }<br />
+  }</p>
+<p> printf(&quot;After sorting  &quot;);<br />
+  for(i=0;i&lt;s;i++)<br />
+  printf(&quot; %d&quot;,a[i]);</p>
+<p> return 0;<br />
+  }</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="style1">&nbsp;</p>
+<div><br />
+</div>
+<div>
+  <p>&nbsp;</p>
+</div>
+<p class="style1">&nbsp;</p>
+</body>
+</html>

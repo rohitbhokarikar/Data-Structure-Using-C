@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="rb.rohit.com.datastructureusingclanguage.BiginActivity"
+            android:background="@drawable/png1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView142"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:id="@+id/button_introduction"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView143"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Searching and Sorting"
+            android:id="@+id/button_searchingandsorting"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView144"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stack"
+            android:id="@+id/button_stack"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView145"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Queue"
+            android:id="@+id/button_queue"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView146"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linked List"
+            android:id="@+id/button_linklist"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView147"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trees"
+            android:id="@+id/button_trees"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView148"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graph"
+            android:id="@+id/button_graph"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_big"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style6 {font-size: 16px}
+.style7 {font-size: 24px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style7">Programme for Linked List -</p>
+<p class="style6">#include &lt;stdio.h&gt;<br />
+  #include &lt;malloc.h&gt;<br />
+  #include &lt;stdlib.h&gt;<br />
+  <br />
+  void main()<br />
+  {<br />
+struct node<br />
+{<br />
+int num;<br />
+struct node *ptr;<br />
+};<br />
+typedef struct node NODE;<br />
+<br />
+NODE *head, *first, *temp = 0;<br />
+int count = 0;<br />
+int choice = 1;<br />
+first = 0;<br />
+<br />
+while (choice)<br />
+{<br />
+head  = (NODE *)malloc(sizeof(NODE));<br />
+printf(&quot;Enter the  item\n&quot;);<br />
+scanf(&quot;%d&quot;, &amp;head-&gt; num);<br />
+if (first != 0)<br />
+{<br />
+temp-&gt;ptr = head;<br />
+temp = head;<br />
+}<br />
+else<br />
+{<br />
+first = temp = head;<br />
+}<br />
+fflush(stdin);<br />
+printf(&quot;Do you want to continue ?\n&quot;);<br />
+scanf(&quot;%d&quot;, &amp;choice);<br />
+<br />
+}<br />
+temp-&gt;ptr = 0;<br />
+<br />
+temp = first;<br />
+printf(&quot;\n status of the linked list is\n&quot;);<br />
+while (temp != 0)<br />
+{<br />
+printf(&quot;%d=&gt;&quot;, temp-&gt;num);<br />
+count++;<br />
+temp = temp -&gt; ptr;<br />
+}<br />
+printf(&quot;NULL\n&quot;);<br />
+printf(&quot;No. of nodes in the list = %d\n&quot;, count);<br />
+}</p>
+<p class="style6">&nbsp;</p>
+</body>
+</html>

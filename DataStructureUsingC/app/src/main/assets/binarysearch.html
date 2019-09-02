@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style6 {font-size: 24px; }
+.style7 {font-size: 16px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style6">Programme for Binary Search -</p>
+<p class="style7">#include &lt;stdio.h&gt;<br />
+  <br />
+  void main()<br />
+  {<br />
+int array[10];<br />
+int i, j, num, temp, keynum;<br />
+int low, mid, high;<br />
+<br />
+printf(&quot;Enter the number of elements \n&quot;);<br />
+scanf(&quot;%d&quot;, &amp;num);<br />
+printf(&quot;Enter the elements  \n&quot;);<br />
+for (i = 0; i &lt; num; i++)<br />
+{<br />
+scanf(&quot;%d&quot;, &amp;array[i]);<br />
+}<br />
+<br />
+<br />
+printf(&quot;Enter the element to search \n&quot;);<br />
+scanf(&quot;%d&quot;, &amp;keynum);<br />
+<br />
+low = 1;<br />
+high = num;<br />
+do<br />
+{<br />
+mid = (low + high) / 2;<br />
+if (keynum &lt; array[mid])<br />
+high = mid - 1;<br />
+else if (keynum &gt; array[mid])<br />
+low = mid + 1;<br />
+} while (keynum != array[mid] &amp;&amp; low &lt;= high);<br />
+if (keynum == array[mid])<br />
+{<br />
+printf(&quot;Search Successful \n&quot;);<br />
+}<br />
+else<br />
+{<br />
+printf(&quot;Search Fail \n&quot;);<br />
+}</p>
+<p class="style7"><br />
+  }</p>
+</body>
+</html>

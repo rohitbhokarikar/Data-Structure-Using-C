@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rb.rohit.com.datastructureusingclanguage">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BiginActivity"
+            android:label="Begin">
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/about"/>
+        <activity
+            android:name=".IntroductionActivity"
+            android:label="@string/introduction"/>
+        <activity
+            android:name=".SearchingandSortingActivity"
+            android:label="@string/searchingandsorting"/>
+        <activity
+            android:name=".StackActivity"
+            android:label="@string/stack"/>
+        <activity
+            android:name=".QueueActivity"
+            android:label="@string/queue"/>
+        <activity
+            android:name=".LinkedlistActivity"
+            android:label="@string/linkedlist"/>
+        <activity
+            android:name=".TreesActivity"
+            android:label="@string/trees"/>
+        <activity
+            android:name=".GraphActivity"
+            android:label="@string/graph"/>
+        <activity
+            android:name=".StackprogrameActivity"
+            android:label="@string/stackprograme"/>
+        <activity
+            android:name=".QueueprogrameActivity"
+            android:label="@string/queueprograme"/>
+        <activity
+            android:name=".LinkedlistprogrameActivity"
+            android:label="@string/linklistprograme"/>
+        <activity
+            android:name=".TreesprogrameActivity"
+            android:label="@string/treesprograme"/>
+        <activity
+            android:name=".GraphprogrameActivity"
+            android:label="@string/graphprograme"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".BubblesortActivity"
+            android:label="@string/bubblesort">
+        </activity>
+        <activity android:name=".InsertionsortActivity"
+            android:label="@string/insertionsort"
+            >
+        </activity>
+        <activity android:name=".QuicksortActivity"
+            android:label="@string/quicksort">
+        </activity>
+        <activity android:name=".MergesortActivity"
+            android:label="@string/mergesort">
+        </activity>
+        <activity android:name=".SelectonsortActivity"
+            android:label="@string/selectionsort">
+        </activity>
+
+
+        <activity android:name=".LinearsearchActivity"
+            android:label="@string/linearsearch">
+        </activity>
+        <activity android:name=".BinarysrachActivity"
+            android:label="@string/binarysearch">
+        </activity>
+        <activity android:name=".HeapersortActivity"
+            android:label="@string/heapsort">
+        </activity>
+    </application>
+
+</manifest>

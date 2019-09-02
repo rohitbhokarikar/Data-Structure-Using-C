@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style8 {font-size: 16px}
+.style9 {font-size: 24px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style9">Programme for Graph -</p>
+<p class="style8"><br />
+  #include&lt;stdio.h&gt;<br />
+  #include&lt;conio.h&gt;<br />
+  int a[20][20],q[20],visited[20],n,i,j,f=0,r=-1;<br />
+  void bfs(int v)<br />
+  {<br />
+for(i=1;i&lt;=n;i++)<br />
+if(a[v][i] &amp;&amp; !visited[i])<br />
+q[++r]=i;<br />
+if(f&lt;=r)<br />
+{<br />
+visited[q[f]]=1;<br />
+bfs(q[f++]);<br />
+}<br />
+}<br />
+void main()<br />
+{<br />
+int v;<br />
+clrscr();<br />
+printf(&quot;\n Enter  number of vertices&quot;);<br />
+scanf(&quot;%d&quot;,&amp;n);<br />
+for(i=1;i&lt;=n;i++)<br />
+{<br />
+q[i]=0;<br />
+visited[i]=0;<br />
+}<br />
+printf(&quot;\n Enter graph nodes in matrix form\n&quot;);<br />
+for(i=1;i&lt;=n;i++)<br />
+for(j=1;j&lt;=n;j++)<br />
+scanf(&quot;%d&quot;,&amp;a[i][j]);<br />
+printf(&quot;\n Enter the starting vertex&quot;);<br />
+scanf(&quot;%d&quot;,&amp;v);<br />
+bfs(v);<br />
+printf(&quot;\n The node are\n&quot;);<br />
+for(i=1;i&lt;=n;i++)<br />
+if(visited[i])<br />
+printf(&quot;%d\t&quot;,i);<br />
+else<br />
+printf(&quot;\n Bfs is not possible&quot;);<br />
+getch();</p>
+<p class="style8">}</p>
+<p class="style8"><br />
+</p>
+</body>
+</html>

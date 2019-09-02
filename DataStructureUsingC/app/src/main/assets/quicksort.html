@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+.style2 {font-size: 16px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style1">Programme for Quick Sort -</p>
+<p>#include&lt;stdio.h&gt;<br />
+  #include&lt;conio.h&gt;</p>
+<p>void quick_sort(int arr[20],int,int);</p>
+<p>void main()<br />
+  {<br />
+  int arr[20],n,i;</p>
+<p> printf(&quot;Enter the number of elements  &quot;);<br />
+  scanf(&quot;%d&quot;,&amp;n);<br />
+  printf(&quot;\nEnter %d elements\n&quot;,n);</p>
+<p> for(i=0 ; i&lt;n ; i++)<br />
+  {</p>
+<p> scanf(&quot;%d&quot;,&amp;arr[i]);<br />
+  }</p>
+<p> quick_sort(arr,0,n-1);<br />
+  printf(&quot;\nThe Sorted list is\n\n&quot;);</p>
+<p> for(i=0 ; i&lt;n ; i++)<br />
+  {<br />
+  printf(&quot; %4d&quot;,arr[i]);<br />
+  }<br />
+  getch();<br />
+  }</p>
+<p>void quick_sort(int arr[20],int low,int high)<br />
+  {<br />
+  int pivot,j,temp,i;<br />
+  if(low&lt;high)<br />
+  {<br />
+  pivot = low;<br />
+  i = low;<br />
+  j = high;</p>
+<p> while(i&lt;j)<br />
+  {<br />
+  while((arr[i]&lt;=arr[pivot])&amp;&amp;(i&lt;high))<br />
+  {<br />
+  i++;<br />
+  }</p>
+<p> while(arr[j]&gt;arr[pivot])<br />
+  {<br />
+  j--;<br />
+  }</p>
+<p> if(i&lt;j)<br />
+  {<br />
+  temp=arr[i];<br />
+  arr[i]=arr[j];<br />
+  arr[j]=temp;<br />
+  }<br />
+  }</p>
+<p> temp=arr[pivot];<br />
+  arr[pivot]=arr[j];<br />
+  arr[j]=temp;<br />
+  quick_sort(arr,low,j-1);<br />
+  quick_sort(arr,j+1,high);</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p class="style1">&nbsp;</p>
+<p class="style2">&nbsp;</p>
+<p class="style2">&nbsp;</p>
+<p class="style2">&nbsp;</p>
+<center>
+</center>
+<p class="style1">&nbsp;</p>
+</body>
+</html>

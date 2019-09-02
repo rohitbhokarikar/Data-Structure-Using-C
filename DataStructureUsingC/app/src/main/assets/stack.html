@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<p class="style1">Programme for Stack -</p>
+<p>#include &lt;stdio.h&gt;<br />
+#define MAXSIZE 5</p>
+<p>struct stack<br />
+  {<br />
+  int stk[MAXSIZE];<br />
+  int top;<br />
+  };<br />
+  typedef struct stack STACK;<br />
+  STACK s;</p>
+<p>void push(void);<br />
+  int  pop(void);<br />
+  void display(void);</p>
+<p>void main ()<br />
+  {<br />
+  int choice;<br />
+  int option = 1;<br />
+  s.top = -1;</p>
+<p> printf (&quot;STACK OPERATION\n&quot;);<br />
+  while (option)<br />
+  {</p>
+<p> printf (&quot;      PUSH              \n&quot;);<br />
+  printf (&quot;      POP               \n&quot;);<br />
+  printf (&quot;      DISPLAY           \n&quot;);<br />
+  printf (&quot;      EXIT              \n&quot;);<br />
+</p>
+<p> printf (&quot;Enter your choice\n&quot;);<br />
+  scanf    (&quot;%d&quot;, &amp;choice);<br />
+  switch (choice)<br />
+  {<br />
+  case 1:<br />
+  push();<br />
+  break;<br />
+  case 2:<br />
+  pop();<br />
+  break;<br />
+  case 3:<br />
+  display();<br />
+  break;<br />
+  case 4:<br />
+  return;<br />
+  }<br />
+  fflush (stdin);<br />
+  printf (&quot;Do you want to continue?\n&quot;);<br />
+  scanf    (&quot;%d&quot;, &amp;option);<br />
+  }<br />
+  }</p>
+<p>void push ()<br />
+  {<br />
+  int num;<br />
+  if (s.top == (MAXSIZE - 1))<br />
+  {<br />
+  printf (&quot;Stack is Full\n&quot;);<br />
+  return;<br />
+  }<br />
+  else<br />
+  {<br />
+  printf (&quot;Enter the element to be pushed\n&quot;);<br />
+  scanf (&quot;%d&quot;, &amp;num);<br />
+  s.top = s.top + 1;<br />
+  s.stk[s.top] = num;<br />
+  }<br />
+  return;<br />
+  }</p>
+<p>int pop ()<br />
+  {<br />
+  int num;<br />
+  if (s.top == - 1)<br />
+  {<br />
+  printf (&quot;Stack is Empty\n&quot;);<br />
+  return (s.top);<br />
+  }<br />
+  else<br />
+  {<br />
+  num = s.stk[s.top];<br />
+  printf (&quot;poped element is = %dn&quot;, s.stk[s.top]);<br />
+  s.top = s.top - 1;<br />
+  }<br />
+  return(num);<br />
+  }</p>
+<p>void display ()<br />
+  {<br />
+  int i;<br />
+  if (s.top == -1)<br />
+  {<br />
+  printf (&quot;Stack is empty\n&quot;);<br />
+  return;<br />
+  }<br />
+  else<br />
+  {<br />
+  printf (&quot;\n The stack is \n&quot;);<br />
+  for (i = s.top; i &gt;= 0; i--)<br />
+  {<br />
+  printf (&quot;%d\n&quot;, s.stk[i]);<br />
+  }<br />
+  }<br />
+  printf (&quot;\n&quot;);<br />
+}</p>
+<p><br />
+</p>
+</body>
+</html>

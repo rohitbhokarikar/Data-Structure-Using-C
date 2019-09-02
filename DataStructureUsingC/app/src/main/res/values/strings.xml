@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Data Structure Using C language</string>
+    <string name="begin">Begin</string>
+    <string name="about">About Us</string>
+    <string name="introduction">Introduction</string>
+    <string name="searchingandsorting">Searching and Sorting</string>
+    <string name="stack">Stack</string>
+    <string name="queue">Queue</string>
+    <string name="linkedlist">Linked List</string>
+    <string name="trees">Trees</string>
+    <string name="graph">Graph</string>
+    <string name="stackprograme">Stack Programe</string>
+    <string name="stackalgorithm">Stack Algorithm</string>
+    <string name="queueprograme">Queue Programe</string>
+    <string name="queuealgorithm">Queue Algorithm</string>
+    <string name="linklistprograme">Linkedlist Programe</string>
+
+    <string name="treesprograme">Trees Programe</string>
+
+    <string name="graphprograme">Graph Programe</string>
+
+    <string name="bubblesort">Bubble Sort</string>
+
+    <string name="insertionsort">Insertion Sort</string>
+
+    <string name="selectionsort">Selection Sort</string>
+
+    <string name="heapsort">Heap Sort</string>
+
+    <string name="quicksort">Quick Sort</string>
+
+    <string name="mergesort">Merge Sort</string>
+
+    <string name="linearsearch">Linear Search</string>
+
+    <string name="binarysearch">Binary Search</string>
+
+
+</resources>

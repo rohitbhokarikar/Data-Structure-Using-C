@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style5 {font-size: 16px}
+.style6 {font-size: 24px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style6">Programme for Merge Sort -</p>
+<p class="style5"> <br />
+  #include &lt;stdio.h&gt;<br />
+  <br />
+  void mergeSort(int [], int, int, int);<br />
+  void partition(int [],int, int);<br />
+  <br />
+  int main()<br />
+  {<br />
+int list[50];<br />
+int i, size;<br />
+<br />
+printf(&quot;Enter number of elements&quot;);<br />
+scanf(&quot;%d&quot;, &amp;size);<br />
+printf(&quot;Enter  elements:\n&quot;);<br />
+for(i = 0; i &lt; size; i++)<br />
+{<br />
+scanf(&quot;%d&quot;, &amp;list[i]);<br />
+}<br />
+partition(list, 0, size - 1);<br />
+printf(&quot;After sorting \n&quot;);<br />
+for(i = 0;i &lt; size; i++)<br />
+{<br />
+printf(&quot;%d   &quot;,list[i]);<br />
+}<br />
+<br />
+return 0;<br />
+}<br />
+<br />
+void partition(int list[],int low,int high)<br />
+{<br />
+int mid;<br />
+<br />
+if(low &lt; high)<br />
+{<br />
+mid = (low + high) / 2;<br />
+partition(list, low, mid);<br />
+partition(list, mid + 1, high);<br />
+mergeSort(list, low, mid, high);<br />
+}<br />
+}<br />
+<br />
+void mergeSort(int list[],int low,int mid,int high)<br />
+{<br />
+int i, mi, k, lo, temp[50];<br />
+<br />
+lo = low;<br />
+i = low;<br />
+mi = mid + 1;<br />
+while ((lo &lt;= mid) &amp;&amp; (mi &lt;= high))<br />
+{<br />
+if (list[lo] &lt;= list[mi])<br />
+{<br />
+temp[i] = list[lo];<br />
+lo++;<br />
+}<br />
+else<br />
+{<br />
+temp[i] = list[mi];<br />
+mi++;<br />
+}<br />
+i++;<br />
+}<br />
+if (lo &gt; mid)<br />
+{<br />
+for (k = mi; k &lt;= high; k++)<br />
+{<br />
+temp[i] = list[k];<br />
+i++;<br />
+}<br />
+}<br />
+else<br />
+{<br />
+for (k = lo; k &lt;= mid; k++)<br />
+{<br />
+temp[i] = list[k];<br />
+i++;<br />
+}<br />
+}<br />
+<br />
+for (k = low; k &lt;= high; k++)<br />
+{<br />
+list[k] = temp[k];<br />
+}<br />
+}</p>
+<p class="style5">&nbsp;</p>
+<p class="style5">&nbsp;</p>
+<p class="style5">&nbsp;</p>
+</body>
+</html>

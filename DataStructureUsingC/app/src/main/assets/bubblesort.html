@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(png.png);
+}
+.style1 {font-size: 24px}
+-->
+</style></head>
+
+<body>
+<p><span class="style1">Programme for Bubble Sort - </span></p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main()<br />
+  {<br />
+  int array[100], n, i, r, swap;</p>
+<p> printf(&quot;Enter number of elements\n&quot;);<br />
+  scanf(&quot;%d&quot;, &amp;n);<br />
+  system(&quot;color 0&quot;);</p>
+<p> printf(&quot;Enter %d elements \n&quot;, n);</p>
+<p> for (i = 0; i &lt; n; i++)<br />
+  scanf(&quot;%d&quot;, &amp;array[i]);</p>
+<p> for (i = 0 ; i &lt; ( n - 1 ); i++)<br />
+  {<br />
+  for (r = 0 ; r &lt; n - i - 1; r++)<br />
+  {<br />
+  if (array[r] &gt; array[r+1])<br />
+  {<br />
+  swap       = array[r];<br />
+  array[r]   = array[r+1];<br />
+  array[r+1] = swap;<br />
+  }<br />
+  }<br />
+  }</p>
+<p> printf(&quot;Sorted list in ascending order:\n&quot;);</p>
+<p> for ( i = 0 ; i&lt; n ; i++ )<br />
+  printf(&quot;%d\n&quot;, array[i]);</p>
+<p> return 0;<br />
+}</p>
+<p>&nbsp;</p>
+<p class="style1">&nbsp;</p>
+<div></div>
+<br />
+<p>&nbsp;</p>
+<p><br />
+</p>
+</body>
+</html>

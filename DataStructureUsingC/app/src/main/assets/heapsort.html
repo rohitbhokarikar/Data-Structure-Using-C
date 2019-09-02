@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<p class="style1">Programme for Heap Sort -</p>
+<p>#include&lt;stdio.h&gt;</p>
+<p>void create(int []);<br />
+  void down_adjust(int [],int);</p>
+<p>void main()<br />
+  {<br />
+  int heap[30],n,i,last,temp;<br />
+  printf(&quot;Enter no. of elements:&quot;);<br />
+  scanf(&quot;%d&quot;,&amp;n);<br />
+  printf(&quot;\nEnter elements:&quot;);<br />
+  for(i=1;i&lt;=n;i++)<br />
+  scanf(&quot;%d&quot;,&amp;heap[i]);<br />
+</p>
+<p> heap[0]=n;<br />
+  create(heap);<br />
+</p>
+<p> while(heap[0] &gt; 1)<br />
+  {</p>
+<p> last=heap[0];<br />
+  temp=heap[1];<br />
+  heap[1]=heap[last];<br />
+  heap[last]=temp;<br />
+  heap[0]--;<br />
+  down_adjust(heap,1);<br />
+  }<br />
+</p>
+<p> printf(&quot;\nafter sorting:\n&quot;);<br />
+  for(i=1;i&lt;=n;i++)<br />
+  printf(&quot;%d &quot;,heap[i]);<br />
+  }</p>
+<p>void create(int heap[])<br />
+  {<br />
+  int i,n;<br />
+  n=heap[0];<br />
+  for(i=n/2;i&gt;=1;i--)<br />
+  down_adjust(heap,i);<br />
+  }</p>
+<p>void down_adjust(int heap[],int i)<br />
+  {<br />
+  int j,temp,n,flag=1;<br />
+  n=heap[0];</p>
+<p> while(2*i&lt;=n &amp;&amp; flag==1)<br />
+  {<br />
+  j=2*i;<br />
+  if(j+1&lt;=n &amp;&amp; heap[j+1] &gt; heap[j])<br />
+  j=j+1;<br />
+  if(heap[i] &gt; heap[j])<br />
+  flag=0;<br />
+  else<br />
+  {<br />
+  temp=heap[i];<br />
+  heap[i]=heap[j];<br />
+  heap[j]=temp;<br />
+  i=j;<br />
+  }<br />
+  }<br />
+}</p>
+<p><br />
+</p>
+<p class="style1">&nbsp;</p>
+</body>
+</html>
